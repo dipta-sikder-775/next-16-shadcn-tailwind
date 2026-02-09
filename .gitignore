@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# IDEs and editors
+/.idea
+
 # testing
 /coverage
 
@@ -30,6 +33,16 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+#jetbrains
+.idea
+
+
+# Ignore unwanted lock files (we need pnpm-lock.yaml only)
+package-lock.json
+yarn.lock
+bun.lockb
+bun.<lockfile>
+
 # env files (can opt-in for committing if needed)
 .env*
 
@@ -39,3 +52,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs
+/logs
+*.log
+
+package-lock.json
